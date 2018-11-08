@@ -18,10 +18,10 @@ YELLOW      = (255, 230, 35)
 BLUE        = (0, 0, 255)
 SKYBLUE     = (150, 215, 255)
 
-WN_WIDTH    = 1000
-WN_HEIGHT   = 800
+WIDTH    = 1000
+HEIGHT   = 800
 
-size    = (WN_WIDTH, WN_HEIGHT)
+size    = (WIDTH, HEIGHT)
 screen  = pygame.display.set_mode(size, 0, 32)
 
 pygame.display.set_caption("Template")
@@ -29,7 +29,6 @@ pygame.display.set_caption("Template")
 clock = pygame.time.Clock()
 
 ##Define some Fonts
-
 mainFont = pygame.font.Font('C:/Windows/Fonts/comic.ttf', 17)
 
 ##Define some Sounds
@@ -46,13 +45,14 @@ while MainGAME:
         if event.type == pygame.QUIT: pygame.quit(), sys.exit()
 
     ## -- Game logic
-        
 
-    
+
+
 
     ## -- Drawing code
     screen.fill(WHITE)
-    
+
+    ## -- Push those commands to the display
     pygame.display.flip()
-        
+
     clock.tick(60) ## FPS
